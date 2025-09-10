@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Decisiones Aleatorias</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link  id="app-style" rel="stylesheet" href="estilos.css">
+</head>
+<body class="flex justify-center p-4">
+
+
+  <div class="decision-container1  p-8 text-center">
+    <h1 class="text-3xl font-bold mb-6 text-gray-800">¿Sí o No?</h1>
+    <p class="text-gray-600 mb-8 p-6" >Presiona el botón para obtener una respuesta aleatoria</p>
+
+    <button id="decisionBtn1" class="decision-btn bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-full text-xl mb-8 w-full sm:w-64 mx-auto">
+
+      <span class="flex items-center justify-center">
+        <i class="fas fa-random mr-2"></i>
+        Decidir ahora
+      </span>
+    </button>
+    
+    <div id="num">
+      <div id="result1" class="result1 text-6xl font-bold mt-8"></div>
+    </div>
+    
+    <p class="text-gray-500 text-sm mt-10">
+      Haz clic nuevamente en el botón para generar otra respuesta
+    </p>
+  </div>
+
+  <div class="decision-container2   p-8 text-center">
+    <h1 class="text-3xl font-bold mb-6 text-gray-800">Numero aleatorio</h1>
+    <p class="text-gray-600 mb-8 ">Ingrese un numero y presiona el botón para obtener una respuesta aleatoria</p>
+
+    <input type="number" id="min" class="border border-gray-800  p-2 w-500 text-center mr-2 rounded-full " placeholder="Numero">
+    <br>
+    <br>
+
+  
+    
+    <button id="btn2" class="decision-btn2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-full text-xl mb-8 w-full sm:w-64 mx-auto">
+      <span class="flex items-center justify-center">
+        <i class="fas fa-random mr-2"></i>
+        Decidir ahora
+      </span>
+    </button>
+    <div id="num">
+      <div id="result2" class="result2 text-6xl font-bold mt-8" fu ></div>
+    </div>
+    
+    <p class="text-gray-500 text-sm mt-10">
+      Haz clic nuevamente en el botón para generar otra respuesta
+    </p>
+  </div>
+
+  <script id="app-script" src="funciones.js"></script>
+</body>
+</html>
